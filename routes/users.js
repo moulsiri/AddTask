@@ -1,7 +1,7 @@
 const validator=require('validator')
 const mongodb=require('mongoose');
 
-mongodb.connect(env.process.MONGOURI)
+mongodb.connect("mongodb://localhost/addTask");
 const schema=mongodb.Schema({
   name:String,
   email:{
